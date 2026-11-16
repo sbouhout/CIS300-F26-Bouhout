@@ -53,7 +53,6 @@ main{
 .home-content {
     display: flex;
     align-items: stretch;
-    justify-content: space-around;
     gap: 35px;
 }
 
@@ -62,10 +61,16 @@ main{
     padding: 30px;
     text-align: center;
     background-color: #7a2300;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    margin-top: -40px;
+    margin-bottom: -40px;
 }
+
+
 
 .welcome h2 {
     color: #000000;
@@ -92,6 +97,8 @@ main{
     background-color: #558b61;
 }
 
+
+
 .home-image{
     width: 50%;
     height: 350px;
@@ -110,4 +117,115 @@ footer{
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
+}
+
+
+/* menu page css */
+
+.page-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #7a2300;
+}
+
+.page-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.menu-heading {
+    text-align: center;
+    color: #7a2300;
+    font-family: Georgia, serif;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    background-color: #ffffff;
+}
+
+.menu-table th {
+    background-color: #af4a22;
+    color: black;
+    padding: 15px;
+    text-align: left;
+}
+
+.menu-table td {
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+.menu-table tr:nth-child(even) {
+    background-color: #f2e5dc;
+}
+
+
+/* about us page css */
+
+.about-content {
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.about-image {
+    width: 50%;
+    min-height: 350px;
+    background-color: grey;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.about-text {
+    flex: 1;
+    padding: 30px;
+    background-color: #f2e5dc;
+    line-height: 1.8;
+}
+
+.about-text h2 {
+    color: #7a2300;
+    font-family: Georgia, serif;
+}
+
+
+/* responsive design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .menu-table {
+        font-size: 13px;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        padding: 8px;
+    }
 }
